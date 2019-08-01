@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.pinninti.curvedbottomnavigationview.CurvedBottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="40dp"
+        android:background="@drawable/oval">
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:id="@+id/fab"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            android:elevation="6dp"
+            android:visibility="gone"
+            app:vector_src="@drawable/ic_account_circle_black_24dp" />
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:id="@+id/fab1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            android:elevation="6dp"
+            app:vector_src="@drawable/ic_airport_shuttle_black_24dp" />
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:id="@+id/fab2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            android:elevation="6dp"
+            android:visibility="gone"
+            app:vector_src="@drawable/ic_shopping_cart_black_24dp" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
